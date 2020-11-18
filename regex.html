@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <title>Example</title>
+    
+</head>
+
+<script>
+    var str = `
+    Ad:Taha Burkay 
+    Soyad:Topaç
+    E-mail:burkay.topac@solidict.com 
+    Telefon:0 546 975 77 88
+    Web-Adress:https://www.google.com
+    Kayıt Tarihi:04/08/1995
+    Tc Kimlik:34682314742 `;
+    var tc = /[1-9][0-9]{10}/g
+    var telefon = /0\s?\(?\d{3}\)?\s?\d{3}\s?\d{2}\s?\d{2}/g
+    var email = /[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+\.\w{2,4}/g;
+    var tarih = /((0?[1-9])|([12][0-9])|(3[01]))\/((0?[1-9])|(1?[0-2]))\/([12][0-9][0-9][0-9])/g;
+    
+    
+    var result = new Array();
+    result[0] = str.match(tc);
+    result[1] = str.match(email);
+    result[2] = str.match(telefon);
+    result[3] = str.match(tarih);
+  
+    for (var i = 0; i < result.length; i++) {
+        document.write((i+1) + ": " + result[i] + "</br>");
+    
+    }
+        
+</script>
+<body>
+    <body>
+   
+    </body>
+</html>

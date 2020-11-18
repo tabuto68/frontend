@@ -1,0 +1,87 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header{
+    
+     
+     color: teal ; 
+     font-weight: bold;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    background-color:rgb(202, 212, 226);
+    margin: 0px;
+    margin-left: 15px;
+     width: 450px;
+    border-radius: 5px;
+    border: 3px solid #4CAF50;
+    height: 50px;
+}
+
+input[id=text],
+input[id=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 3px solid #4CAF50
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelButton {
+
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+
+
+.containerLogin {
+    border-radius: 5px;
+    border: 3px solid gray ;
+    padding: 16px;
+    height: 100%;
+    width: 450px;
+    background-color: rgb(202, 212, 226);
+    margin-left: 15px;
+}
+
+#output {
+
+
+    margin: 15px;
+
+}
+
+
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+
+    .cancelbtn {
+        width: 100%;
+    }
+}

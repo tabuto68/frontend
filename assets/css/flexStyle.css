@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  
+  .container {
+
+    padding: 0;
+    margin: 0;
+    max-width:100% ;
+    background-color: #1F222C;
+    width: 400px;
+    height: 400px;
+   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   
+    flex-wrap: wrap;
+ 
+  }
+  
+  .card {
+    margin: 10px;
+    position: relative;
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: #474C5A; 
+    text-align: center;
+    justify-content: center;
+    color: #85E6FA;
+  
+  }
+
+  .sekme {
+    width: 600px;
+    height: 480px;
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+}
+
+  @media only screen and (min-width: 601px) {
+   .container{
+     flex-wrap: wrap;
+   }
+  }
+  
+  .flex-container {
+    display: flex;
+    align-items: stretch;
+    background-color: #f1f1f1;
+  }
+  
+  .flex-container>div {
+    background-color: DodgerBlue;
+    color: white;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
